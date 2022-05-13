@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         attribution: ATRIBUICAO_COPYRIGHT
     });
     tiles.addTo(MAPA_ISS);
-    setInterval(getISS, 1000);
+    setInterval(getISS, 5000);
 });
 
 async function getISS() {
@@ -20,4 +20,7 @@ async function getISS() {
     let { latitude, longitude } = dados;
 
     MARCADOR.setLatLng([latitude, longitude]);
+
+    document.querySelector('#lat').textContent = latitude;
+    document.querySelector('#lng').textContent = longitude;
 }
