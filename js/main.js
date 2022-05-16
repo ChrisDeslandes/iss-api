@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         attribution: ATRIBUICAO_COPYRIGHT
     });
     tiles.addTo(MAPA_ISS);
-    setInterval(getISS, 5000);
+    setInterval(getISS, 1000);
 });
 
 async function getISS() {

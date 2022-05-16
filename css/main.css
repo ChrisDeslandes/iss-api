@@ -1,4 +1,25 @@
+header {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+#container {
+    width: 640px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
 #mapa-iss {
+    border: 1px solid black;
     width: 640px;
     height: 480px;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: "\2192  ";
 }
